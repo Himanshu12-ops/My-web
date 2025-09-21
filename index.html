@@ -9,7 +9,7 @@
         
         body {
             margin: 0;
-            padding: 20px;
+            padding: 10px;
             font-family: 'Noto Sans Devanagari', Arial, sans-serif;
             background: linear-gradient(135deg, #654321 0%, #8B4513 50%, #A0522D 100%);
             min-height: 100vh;
@@ -19,7 +19,8 @@
         }
         
         .invitation-card {
-            width: 650px;
+            width: 100%;
+            max-width: 650px;
             background: linear-gradient(to bottom, #FFF8DC 0%, #FFFACD 50%, #FFF8DC 100%);
             border: 12px solid #DAA520;
             border-radius: 25px;
@@ -121,6 +122,206 @@
             box-shadow: 0 10px 25px rgba(0,0,0,0.2);
             position: relative;
             overflow: hidden;
+        }
+        
+        /* Tablet Styles */
+        @media screen and (max-width: 768px) {
+            .content {
+                padding: 30px 35px;
+            }
+            
+            .header-mantras {
+                font-size: 16px;
+                gap: 10px;
+            }
+            
+            .ganesh-om {
+                font-size: 65px;
+            }
+            
+            .main-title {
+                font-size: 36px;
+            }
+            
+            .location-year {
+                font-size: 24px;
+            }
+            
+            .rama-darbar {
+                width: 240px;
+                height: 170px;
+            }
+            
+            .event-dates {
+                font-size: 28px;
+            }
+            
+            .venue {
+                font-size: 20px;
+            }
+            
+            .organizers {
+                gap: 12px;
+            }
+            
+            .organizer-title {
+                font-size: 16px;
+            }
+            
+            .organizer-name {
+                font-size: 14px;
+            }
+        }
+        
+        /* Mobile Styles */
+        @media screen and (max-width: 480px) {
+            body {
+                padding: 5px;
+            }
+            
+            .invitation-card {
+                border: 8px solid #DAA520;
+                border-radius: 20px;
+            }
+            
+            .content {
+                padding: 20px 25px;
+            }
+            
+            .header-mantras {
+                font-size: 14px;
+                flex-direction: column;
+                gap: 5px;
+                margin-bottom: 10px;
+            }
+            
+            .ganesh-om {
+                font-size: 50px;
+                margin: 10px 0;
+            }
+            
+            .main-title {
+                font-size: 28px;
+                margin: 15px 0;
+            }
+            
+            .location-year {
+                font-size: 20px;
+                margin: 12px 0;
+            }
+            
+            .rama-darbar {
+                width: 200px;
+                height: 140px;
+                margin: 20px auto;
+            }
+            
+            .rama-darbar::before {
+                font-size: 24px;
+            }
+            
+            .rama-darbar::after {
+                font-size: 14px;
+                bottom: 15px;
+            }
+            
+            .event-dates {
+                font-size: 24px;
+                margin: 20px 0 12px;
+            }
+            
+            .venue {
+                font-size: 18px;
+                margin: 12px 0 20px;
+            }
+            
+            .organizers {
+                grid-template-columns: 1fr;
+                gap: 10px;
+                margin-top: 15px;
+            }
+            
+            .organizer-section {
+                padding: 8px;
+            }
+            
+            .organizer-title {
+                font-size: 15px;
+            }
+            
+            .organizer-name {
+                font-size: 13px;
+            }
+            
+            .prepared-by {
+                font-size: 16px;
+                margin-top: 20px;
+                padding: 8px;
+            }
+            
+            .blessing-text {
+                font-size: 12px;
+                margin: 12px 0;
+            }
+            
+            .side-flowers {
+                width: 20px;
+            }
+            
+            .decorative-elements::before,
+            .decorative-elements::after {
+                font-size: 20px;
+                top: 15px;
+            }
+            
+            .decorative-elements::before {
+                left: 15px;
+            }
+            
+            .decorative-elements::after {
+                right: 15px;
+            }
+        }
+        
+        /* Large Mobile Styles */
+        @media screen and (max-width: 600px) and (min-width: 481px) {
+            .content {
+                padding: 25px 30px;
+            }
+            
+            .header-mantras {
+                font-size: 15px;
+            }
+            
+            .ganesh-om {
+                font-size: 60px;
+            }
+            
+            .main-title {
+                font-size: 32px;
+            }
+            
+            .location-year {
+                font-size: 22px;
+            }
+            
+            .rama-darbar {
+                width: 220px;
+                height: 150px;
+            }
+            
+            .event-dates {
+                font-size: 26px;
+            }
+            
+            .venue {
+                font-size: 19px;
+            }
+            
+            .organizers {
+                grid-template-columns: 1fr 1fr;
+                gap: 10px;
+            }
         }
         
         .rama-darbar::before {
